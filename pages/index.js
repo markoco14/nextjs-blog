@@ -24,8 +24,15 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <header>
+        <nav>
+          <Link href={`/api/hello`}>
+            <a>API</a>
+          </Link>
+        </nav>
+      </header>
       <section className={utilStyles.headingMd}>
-        <p>Hi, I'm Mark. I do things with the web. Right now I'm learning about NextJS. It is fun.</p>
+        <p>Hi, I'm Mark. Next JS is great! And the API is now available.</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
